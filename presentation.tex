@@ -1,0 +1,90 @@
+\documentclass[9pt, xcolor=dvipsnames]{beamer}
+
+% Font and encoding
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% Language and typography
+\usepackage[english]{babel}
+\usepackage{microtype}
+\usepackage{ragged2e}
+\justifying
+
+% Mathematics packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm} 
+\usepackage{bm}
+
+% Algorithms
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+
+% Bibliography
+\usepackage[style=ieee, backend=bibtex]{biblatex}
+\addbibresource{reference.bib}
+\renewcommand*{\bibfont}{\footnotesize}
+
+% Graphics
+\usepackage{graphicx}
+
+% Itemize/enumerate
+\usepackage{enumitem}
+
+%Theme settings
+\usetheme{metropolis}
+\usefonttheme{serif}
+\metroset{block=fill}
+
+% Custom spacing
+\usepackage{setspace}
+\setlength{\parskip}{0.5em plus 0.1em minus 0.1em}
+
+% Shortcuts
+\usepackage{shortcuts}
+
+\title{Presentation Template}
+%\subtitle{}
+\date{\today}
+\author{Chenfei Huang}
+\institute{State Key Laboratory of Scientific and Engineering Computing\\
+Institute of Computational Mathematics and Scientific/Engineering Computing\\Academy of Mathematics and Systems Science\\ Chinese Academy of Sciences}
+\titlegraphic{\hfill\includegraphics[height=1.6cm]{logo.png}}
+
+
+\begin{document}
+
+\maketitle
+
+\justifying
+
+\begin{frame}{Table of contents}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+\begin{frame}{Frame Title}
+
+\end{frame}
+
+{
+\metroset{sectionpage=none}
+\begin{frame}[allowframebreaks]{References}
+    \printbibliography
+\end{frame}
+}
+
+\begin{frame}[standout]
+    Thanks!
+\end{frame}
+
+\appendix
+
+\begin{frame}{Backup Slides}
+    
+\end{frame}
+
+\end{document}
+
